@@ -15,7 +15,7 @@ class Personna:
         print(f"My full address is : { self._address_number } { self._address_street }, { self._city } ({ self._postcode })")
 
     def set_address(self, address_number, address_street, city, postcode):
-        self._address_street = address_street
         self._address_number = address_number
+        self._address_street = address_street
         self._city = city
         self._postcode = postcode
