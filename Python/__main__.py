@@ -1,5 +1,7 @@
 from personna import *
-from test import *
+from personna_test import *
+
+import os
 
 def Launch_list_habitant():
     for element in range(0, 3 + 1):
@@ -17,12 +19,15 @@ def Launch_list_habitant():
         Pointeur.show_address()
         print("--")
 
+os.system("cls") 
 answer = input("Test ou Start : ")
 while answer != "Test" or answer != "Start":
     if answer == "Test":
+        os.system("cls") 
         PointerTest = TestPersonna()
         break
     elif answer == "Start":
+        os.system("cls") 
         Launch_list_habitant()
         break
     answer = input("Test ou Start : ") 
