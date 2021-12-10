@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<a href="{% url  'generate_persona' %}">New persona</a>
+{% for persona in personas %}
+
+    <li>
+        {{ persona.id }}, <a href="{% url  'details_persona' persona.id %}">{{ persona.first_name }}</a> , <a
+            href="{% url  'details_persona' persona.id %}">{{ persona.last_name }}</a>, {{ persona.email }}
+    </li>
+{% endfor %}
+</body>
+</html>
