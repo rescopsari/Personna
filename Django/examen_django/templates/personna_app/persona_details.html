@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<img src="{{ persona.picture }}">
+
+<li>first_name : {{ persona.first_name }} </li>
+<li>last_name : {{ persona.last_name }} </li>
+<li>adress_street : {{ persona.adress_street }} </li>
+<li>adress_number : {{ persona.adress_number }} </li>
+<li>city : {{ persona.city }} </li>
+<li>country : {{ persona.country }} </li>
+<li>postcode : {{ persona.postcode }} </li>
+<li>email : {{ persona.email }} </li>
+<li>username : {{ persona.username }} </li>
+<li>password : {{ persona.password }} </li>
+<li>age : {{ persona.age }} </li>
+
+<a href="{% url  'list_persona' %}">Retour vers list</a>
+</body>
+</html>
