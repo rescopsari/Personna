@@ -24,7 +24,8 @@ answer = input("Test ou Start : ")
 while answer != "Test" or answer != "Start":
     if answer == "Test":
         os.system("cls") 
-        PointerTest = TestPersonna()
+        # PointerTest = TestPersonna()
+        unittest.main()
         break
     elif answer == "Start":
         os.system("cls") 
